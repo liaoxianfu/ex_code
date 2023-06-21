@@ -1,0 +1,47 @@
+python tools/test.py local_configs/swin_conv6/upernet_swin_conv6_base_path4_window5_512x512_160k_loveDA_pretain_384x384_22k.py work_dirs/upernet_swin_conv6_base_path4_window5_512x512_160k_loveDA_pretain_384x384_22k/iter_38400.pth  --format-only --eval-options "imgfile_prefix=./loveDATest"
+
+data = dict(samples_per_gpu=2, test=dict(
+        img_dir='img_dir/test',
+        ann_dir='ann_dir/test'))
+
+
+
+
+Class	IoU
+mIoU	0.5232412219047546
+background	0.45758262276649475
+building	0.5967254638671875
+road	0.5717329978942871
+water	0.7985508441925049
+barren	0.18855491280555725
+forest	0.4664568305015564
+agriculture	0.5830847024917603
+ExecutionTime	192.6873288154602
+
+
+
+
+Class	IoU
+mIoU	0.5119470953941345
+background	0.4520110487937927
+building	0.5456728935241699
+road	0.5470464825630188
+water	0.8004017472267151
+barren	0.1679704189300537
+forest	0.45804938673973083
+agriculture	0.6124776601791382
+ExecutionTime	160.8596363067627
+
+
+
+
+Class	IoU
+mIoU	0.5191265344619751
+background	0.453580379486084
+building	0.5811793208122253
+road	0.5505804419517517
+water	0.7901380658149719
+barren	0.19544517993927002
+forest	0.46037501096725464
+agriculture	0.6025874018669128
+ExecutionTime	206.15080571174622
